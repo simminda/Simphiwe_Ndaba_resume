@@ -22,19 +22,27 @@
 
 <style>
     body {
-        /* background: url("img/icons8-team-dhZtNlvNE8M-unsplash.jpg"); */
         background: url("img/pawel-czerwinski-XLUuAayDyHs-unsplash.jpg");
         background-size: cover;
+        background-position: center;
+    }
+
+    /* Remove the background image on mobile devices */
+    @media (max-width: 600px) {
+        body {
+            background: url("img/dotted_bckgrnd.png");
+            background-repeat: repeat;
+            background-position: 0 0;
+        }
     }
 </style>
-
 
 <body>
     <!-- MAIN CONTAINER -->
     <div class="container">
         <div class="row">
             <div class="col">
-                <div style="text-align: center; padding-top: 8%;">
+                <div style="text-align: center; padding-top: 10%;">
                     <img class="logo-img" src="img/imgfile-removebg-preview.png">
                     <h1>
                         Experienced Accountant and Coding Mentor with a Creative Edge
@@ -73,6 +81,7 @@
             </div>
         </div>
     </div>
+    <br><br>
 
     <div class="container text-center" style="position: fixed; bottom: 0; max-width: 100%">
         <footer>
