@@ -1,100 +1,448 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" class="no-js">
+
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Accountant</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <!-- Bootstrap Font Icon CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-    <!-- Custom styles CSS -->
-    <link rel="stylesheet" href="css/main.css" />
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- THEME STYLES -->
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
-
-    <title>Simphiwe Ndaba</title>
 </head>
 
 <style>
     body {
-        background: url("img/pawel-czerwinski-XLUuAayDyHs-unsplash.jpg");
-        background-size: cover;
-        background-position: center;
+        background: url("img/dotted_bckgrnd.png");
+        background-repeat: repeat;
     }
 
-    /* Remove the background image on mobile devices */
-    @media (max-width: 600px) {
-        body {
-            background: url("img/dotted_bckgrnd.png");
-            background-repeat: repeat;
-            background-position: 0 0;
-        }
-    }
+
 </style>
 
-<body>
-    <!-- MAIN CONTAINER -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div style="text-align: center; padding-top: 10%;">
-                    <img class="logo-img" src="img/imgfile-removebg-preview.png">
-                    <h1>
-                        Experienced Accountant and Coding Mentor with a Creative Edge
-                    </h1>
-                    <br>
-                    <p>
-                        Hello! I'm Simphiwe Ndaba, an accountant with over 10 years of
-                        experience and a passion for coding. My expertise spans a wide
-                        range of accounting practices, including financial statement
-                        preparation, payroll processing, debtors and creditors
-                        reconciliations, and month/year-end close processes. I’ve worked
-                        across diverse industries such as logistics, maintenance, and
-                        consulting, ensuring that my clients receive accurate and
-                        insightful financial reports.
-                    </p>
+<body data-spy="scroll" data-target=".header">
 
-                    <p>
-                        But that's not all! I'm also a software engineering mentor,
-                        guiding students in coding languages like Java, Python, SQL, HTML,
-                        CSS, and JavaScript. I’ve completed projects that range from
-                        building custom task managers to fully functional games and apps,
-                        showcasing my ability to blend analytical thinking with creative
-                        problem-solving.
-                    </p>
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
 
-                    <p>
-                        If you're looking for someone who understands both numbers and
-                        code, I’m your go-to expert. Let’s collaborate and create
-                        solutions that make a difference!
-                    </p>
-                    <br>
-                    <a href="dev.html" class="btn btn-secondary">&nbsp;&nbsp;Tech&nbsp;&nbsp;</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="finance.html" class="btn btn-light">Accounts</a>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a class="logo-wrap" href="index.html">
+                            <img class="logo-img" src="img/logo.png">
+                        </a>
+                    </div>
+                    <!-- End Logo -->
                 </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <ul class="nav navbar-nav navbar-nav-right">
+                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a>
+                        </li>
+                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                href="#about">About</a></li>
+                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                href="#experience">Experience</a></li>
+                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a>
+                        </li>
+                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--========== END HEADER ==========-->
+
+    <!--========== SLIDER ==========-->
+    <div class="promo-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 sm-margin-b-60">
+                    <div class="margin-b-30">
+                        <h1 class="promo-block-title">Simphiwe <br /> Ndaba</h1>
+                        <p class="promo-block-text" style="color: rgb(26, 245, 172);"><b>Financial Accountant</b></p>
+                    </div>
+                    <ul class="list-inline">
+                        <li><a href="https://www.facebook.com/descendent" class="social-icons"><i
+                                    class="icon-social-facebook"></i></a></li>
+                        <li><a href="https://github.com/simminda" class="social-icons"><i
+                                    class="icon-social-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/simphiwe-n-35075b140" class="social-icons"><i
+                                    class="icon-social-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="promo-block-img-wrap">
+                        <img class="promo-block-img img-responsive" src="img/me3.JPG" style="margin-bottom: 100px;">
+                    </div>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!--========== SLIDER ==========-->
+
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- About -->
+    <div id="about">
+        <div class="container content-lg">
+            <div class="row">
+                <div class="col-sm-5 sm-margin-b-60">
+                    <img class="full-width img-responsive" src="img/zululand.jpg" alt="Background Landscape Image"
+                        style="margin-top: 70px;">
+                </div>
+                <div class="col-sm-7">
+                    <div class="section-seperator margin-b-50">
+                        <div class="margin-b-50">
+                            <div class="margin-b-30">
+                                <h2>About Me</h2>
+                                <p>Simphiwe Ndaba is a a professional accountant with over 10 years of experience in
+                                    handling comprehensive accounting tasks. Whether you run a small business or a
+                                    growing enterprise, I specialize in managing payroll processing, debtors and
+                                    creditors reconciliations, financial statement preparation, and month/year-end close
+                                    processes. My goal is to simplify your financial management, ensuring you stay
+                                    compliant while maximizing efficiency.</p>
+                                <p> I have expertise in using various accounting software, including Sage, Xero,
+                                    QuickBooks, Pastel, and Accpac. Whether you need help with reconciling accounts,
+                                    generating accurate reports, or setting up an accounting system from scratch, I’ll
+                                    deliver high-quality results. I’ve also successfully managed cash flows, processed
+                                    month-end journals, and performed financial audits across industries like logistics,
+                                    consulting, and maintenance.</p>
+                                <p>With a keen eye for detail and a passion for numbers, I’m here to help you achieve
+                                    peace of mind by handling all your accounting needs professionally and promptly.</p>
+                            </div>
+                            <a href="./Simphiwe-Ndaba-CV-24.pdf"
+                                class="btn-theme btn-theme-md btn-default-bg text-uppercase">Download my CV</a>
+                        </div>
+                    </div>
+
+
+                    <h2>Accounting Information Systems</h2>
+
+                    <div class="row">
+                        <div class="col-md-2 text-center"><img src="img/logos/pastel.jpg" alt="" class="" height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">Pastel Partner</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/quickbooks.png" alt="" class=""
+                                height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">QuickBooks</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/Product-Icon_Sage-VIP.png" alt="" class=""
+                                height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">VIP</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/books.png" alt="" class="" height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">Zoho Books</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/Xero_software_logo.svg.png" alt=""
+                                class="" height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">Xero</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/dovetail.jpg" alt="" class="" height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">Freightware</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/accpac.png" alt="" class="" height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">Accpac</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/sage-evolution-1.png" alt="" class=""
+                                height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">Evolution</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/shipshape.png" alt="" class=""
+                                height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">ShipShape</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/sage-one-logo.png" alt="" class=""
+                                height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">Sage Accounting</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/sharepoint.jpg" alt="" class=""
+                                height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">Sharepoint</h6>
+                        </div>
+                        <div class="col-md-2 text-center"><img src="img/logos/microsoft-office3327.jpg" alt="" class=""
+                                height="50">
+                            <h6 class="mb-0 fw-medium text-gray-700">MS Office</h6>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Experience -->
+
+    <div id="experience">
+        <div class="bg-color-sky-light" data-auto-height="true">
+            <div class="container content-lg">
+                <h2>My Education</h2>
+                <div class="row row-space-2 margin-b-4">
+                    <div class="col-md-3 col-sm-6 sm-margin-b-4">
+                        <div class="service" data-height="height">
+                            <div class="service-element">
+                                <i class="service-icon icon-badge"></i>
+                            </div>
+                            <div class="service-info">
+                                <img class="full-width img-responsive" src="img/uct.JPG">
+                                <h3>B.Com: Financial Accounting</h3>
+                                <p class="margin-b-5">2010</p>
+                            </div>
+                            <a href="#" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 md-margin-b-4">
+                        <div class="service bg-color-base wow zoomIn" data-height="height" data-wow-duration=".3"
+                            data-wow-delay=".1s">
+                            <div class="service-element">
+                                <i class="service-icon color-white icon-book-open"></i>
+                            </div>
+                            <div class="service-info">
+                                <img class="full-width img-responsive" src="img/hyp.JPG">
+                                <h3 class="color-white">Software Engineering Bootcamp</h3>
+                                <p class="color-white margin-b-5">2021</p>
+                            </div>
+                            <a href="#" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--// end row -->
+                <br><br>
+                <h2>My Experience</h2>
+                <p>
+                    <b>General Accountant (June 2023 - Present)</b>
+                    Bofin Consulting (Accounting Services)
+                <ul>
+                    <li>Implementing accounting systems for SMMEs</li>
+                    <li>Validation of source documents to General Ledger</li>
+                    <li>Periodic reporting, Preparation and finalization of Trial Balance</li>
+                    <li>Monitor and analyze financial discrepancies</li>
+                    <li>Analytical Review of financial numbers and explanations.</li>
+                    <li> Payroll reconciliations</li>
+                    <li>Debtors and Creditors Reconciliations.</li>
+                    <li>Processing of month-end Journals.</li>
+                    <li>Oversight to bank and cash flows.</li>
+                    <li>Month / Year-end Close Processes.</li>
+                    <li>Create and manage custom software solution for managing fleet</li>
+                </ul>
+                </p>
+
+                <p>
+                    <b>Accountant/Finance Manager (Apr 2017 - Oct 2021)</b>
+                    Cargo Office and Property Services (Facilities Maintenance + Logistics)
+                <ul>
+                    <li>Financial Statements preparations</li>
+                    <li>Payroll processing</li>
+                    <li>Oversee Accounts payable & Accounts Receivable duties</li>
+                    <li>Reviewing and payment of all monthly statutory returns</li>
+                    <li>Full function Debtors and Creditors</li>
+                    <li>Cashbook maintenance</li>
+                    <li>Financial Statements preparations</li>
+                    <li>Reviewing and payment of all monthly statutory returns</li>
+                    <li>Posting to G/L and journals</li>
+                    <li>Preparation of Management Accounts & Cash􀃸ow projections</li>
+                    <li>Maintaining the Asset Register</li>
+                    <li>Handling of queries in Finance Dept.</li>
+                    <li>Operations optimization analysis</li>
+                    <li>Liaising with auditors and business consultants</li>
+                </ul>
+                </p>
+                <p>
+                    <b>Credit Controller (JAN 2016 – FEB 2018)</b>
+                    Cue Administration Solutions (PTY) LTD (Imports/Exports; Warehousing)
+                <ul>
+                    <li>Daily Cash Allocations</li>
+                    <li>Sending out Statements and invoices</li>
+                    <li>Banking, maintenance and reconciliation of cheques and petty cash</li>
+                    <li>Phoning of overdue accounts and maintenance of Debtors aging</li>
+                    <li>Assisting clients with daily queries</li>
+                    <li>Compiling refund documentation and ensuring company procedure
+                        adhered to.</li>
+                    <li>Reconciliation of accounts and communicating findings to clients</li>
+                    <li>Monthly Close-off procedures</li>
+                    <li>Open & Maintain Accounts in Company Library</li>
+                    <li>Vendor Application completion</li>
+                    <li>Filing, Scanning, Archiving</li>
+                    <li>Capturing Bank Statements</li>
+                    <li>Updating Daily Cash Flow Figures</li>
+                    <li>Loading payments for Suppliers/CODS/SARS</li>
+                    <li>Writing out cheques and dispensing petty cash</li>
+                    <li>Filing of payment recons</li>
+                </ul>
+                </p>
+                <p>
+                    <b>Invoice Administrator (NOV 2012 – DEC 2015)</b>
+                    Triton Express (PTY) LTD (Logistics)
+                <ul>
+                    <li>Ensuring correct client billing on system by checking waybills
+                        for correct capturing of all applicable charges.</li>
+                    <li>Investigating any discrepancies and then modifying the system and
+                        verifying before generating invoices.</li>
+                    <li>Running Excel reports regularly to ensure clearance of waybills
+                        awaiting verification and bring problem to managements’ attention.</li>
+                    <li>Query delivery and invoicing disputes with operations and clients.</li>
+                </ul>
+                </p>
             </div>
         </div>
     </div>
-    <br><br>
+    <!-- End Experience -->
 
-    <div class="container text-center" style="position: fixed; bottom: 0; max-width: 100%">
-        <footer>
-            <p> &copy; 2024 &mdash; Simphiwe Ndaba</p>
-        </footer>
+    <!-- Projects -->
+    <div id="work">
+        <div class="container content-lg">
+            <div class="row margin-b-40">
+                <div class="col-sm-6">
+                    <h2>Work Samples
+                </div>
+            </div>
+            <div class="row">
+                <!-- My Projects 1-->
+                <div class="col-sm-12 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <h4>Accounts Receivable management</h4>
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img class="img-responsive" src="img/mp/ar_age.png" alt="age image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <!-- My Projects 2-->
+                <div class="col-sm-12 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <h4>Management Accounts</h4>
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img class="img-responsive" src="img/mp/man_acc.png" alt="Man Accounts Image">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End My Projects -->
+            </div>
+            <!--// end row -->
+
+        </div>
     </div>
+    <!-- End Work -->
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
-    <script src="js/jquery-3.6.4.js"></script>
-    <script src="js/script.js"></script>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner parallax-window" data-parallax="scroll"
+        data-image-src="img/ashraf-ali-JLW-T4LiJCw-unsplash.jpg">
+        <div class="container-sm content-lg">
+            <h2 class="promo-banner-title">Thank you for your business</h2>
+            <p class="promo-banner-text"></p>
+        </div>
+    </div>
+    <!-- End Promo Banner -->
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="bg-color-sky-light">
+            <div class="container content-lg">
+                <div class="row margin-b-40">
+                    <div class="col-sm-6">
+                        <h2>Contact Me</h2>
+                        <p>Please feel free to reach out...</p>
+                    </div>
+                </div>
+                <!--// end row -->
+
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 md-margin-b-30">
+                        <h4>Location</h4>
+                        <a href="#">Kempton, Johannesburg</a>
+                    </div>
+                    <div class="col-md-3 col-xs-6 md-margin-b-30">
+                        <h4>Phone</h4>
+                        <a href="#">+27 83 338 7386</a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <h4>Email</h4>
+                        <a href="mailto:#">simmi.ndaba@gmail.com</a>
+                    </div>
+
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+    </div>
+    <!-- End Contact -->
+    <!--========== END PAGE LAYOUT ==========-->
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+        <div class="content container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <img class="footer-logo" src="img/logo.png" alt="sim Logo">
+                </div>
+                <div class="col-xs-6 text-right sm-text-left">
+                    <p> &copy; 2023 &mdash; Simphiwe Ndaba</p>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
+
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+    <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- CORE PLUGINS -->
+    <script src="vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- PAGE LEVEL PLUGINS -->
+    <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+    <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery.parallax.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery.appear.js" type="text/javascript"></script>
+    <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <script src="js/layout.min.js" type="text/javascript"></script>
+    <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
+    <script src="js/components/swiper.min.js" type="text/javascript"></script>
+    <script src="js/components/wow.min.js" type="text/javascript"></script>
+
 </body>
+<!-- END BODY -->
 
 </html>
